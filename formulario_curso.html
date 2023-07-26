@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cursos</title>
+    
+    <script>
+    cursos = []
+
+    function cadastrar(){
+        var curso = {}
+        curso["nome_curso"] = document.getElementById("nome_curso").value;
+        curso["valor"] = document.getElementById("valor").value;
+
+        cursos.push(curso);
+
+        alert(curso.nome_curso + "foi cadastrado com sucesso.")
+
+        listar()
+        limpar()
+    }
+    
+    </script>
 </head>
 <body>
     <table>
         <thead>
-            <tr>Nome</tr>
-            <tr>Valor</tr>
-            <tr></tr>
+            <td>Nome</td>
+            <td>Valor</td>
+            <td></td>
         </thead>
         <tbody>
-            <tr>Excel</tr>
-            <tr>2000</tr>
-            <tr>
+            <td>Excel</td>
+            <td>2000</td>
+            <td>
                 <input type="button" name="alterar" id="alterar" value="Alterar">
                 <input type="button" name="excluir" id="excluir" value="Exlcuir">
-            </tr>
+            </td>
         </tbody>
     </table>
     <div>
