@@ -3,12 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Professores</title>
 </head>
 <body>
-    <a href="index.html">Página Inicial</a>
-    <a href="alunos.html">Alunos</a>
-    <a href="cursos.html">Cursos</a>
-    <a href="turmas.html">Turmas</a>    
+    <div class="menu-container">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="turmas.html">Turmas</a></li>
+                <li><a href="alunos.html">Alunos</a></li>
+                <li><a href="professores.html">Professores</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1>Professores</h1>
+        <button class="novo-professor-button" onclick="location.href='formulario_professor.html'">Novo professor</button>
+        
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Alterar</th>
+                <th>Excluir</th>
+            </tr>
+            <tr>
+                <td>Professor 1</td>
+                <td>(123) 456-7890</td>
+                <td><button class="alterar-button">Alterar</button></td>
+                <td><button class="excluir-button">Excluir</button></td>
+            </tr>
+            <tr>
+                <td>Professor 2</td>
+                <td>(987) 654-3210</td>
+                <td><button class="alterar-button">Alterar</button></td>
+                <td><button class="excluir-button">Excluir</button></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

@@ -3,13 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Alunos</title>
 </head>
 <body>
-    <a href="index.html">Página Inicial</a>
-    <a href="cursos.html">Cursos</a>
-    <a href="professores.html">Professores</a>
-    <a href="turmas.html">Turmas</a>
-    
+     <div class="menu-container">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="turmas.html">Turmas</a></li>
+                <li><a href="alunos.html">Alunos</a></li>
+                <li><a href="professores.html">Professores</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1>Alunos</h1>
+        <button class="novo-aluno-button" onclick="location.href='formulario_aluno.html'">Novo aluno</button>
+        
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Alterar</th>
+                <th>Excluir</th>
+            </tr>
+            <tr>
+                <td>Aluno 1</td>
+                <td>aluno1@example.com</td>
+                <td>(123) 456-7890</td>
+                <td><button class="alterar-button">Alterar</button></td>
+                <td><button class="excluir-button">Excluir</button></td>
+            </tr>
+            <tr>
+                <td>Aluno 2</td>
+                <td>aluno2@example.com</td>
+                <td>(987) 654-3210</td>
+                <td><button class="alterar-button">Alterar</button></td>
+                <td><button class="excluir-button">Excluir</button></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

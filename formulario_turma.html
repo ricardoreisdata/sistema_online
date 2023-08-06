@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário Turma</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Nova Turma</title>
 </head>
 <body>
-    <a href="index.html">Voltar</a>    
+    <!-- Include the menu -->
+    <div class="menu-container">
+        <!-- You can use server-side includes or copy the content from menu.html here -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="turmas.html">Turmas</a></li>
+                <li><a href="alunos.html">Alunos</a></li>
+                <li><a href="professores.html">Professores</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1>Nova Turma</h1>
+        <form>
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso">
+                <option value="Windows">Windows</option>
+                <option value="Excel">Excel</option>
+                <option value="Power BI">Power BI</option>
+            </select><br>
+
+            <label for="data_inicio">Data de Início:</label>
+            <input type="date" id="data_inicio" name="data_inicio" required><br>
+
+            <label for="data_termino">Data de Término:</label>
+            <input type="date" id="data_termino" name="data_termino" required><br>
+
+            <button type="submit">Ok</button>
+            <button type="reset">Limpar</button>
+            <a href="turmas.html">Voltar</a>
+        </form>
+    </div>
 </body>
 </html>

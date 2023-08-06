@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Novo Curso</title>
+    <title>Novo Aluno</title>
 </head>
 <body>
     <div class="menu-container">
@@ -20,17 +20,26 @@
     </div>
 
     <div class="content">
-        <h1>Novo Curso</h1>
+        <h1>Novo Aluno</h1>
         <form>
-            <label for="nome">Nome do Curso:</label>
+            <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required><br>
 
-            <label for="valor">Valor:</label>
-            <input type="number" id="valor" name="valor" required><br>
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br>
 
             <button type="submit">Ok</button>
             <button type="reset">Limpar</button>
-            <a href="cursos.html">Voltar</a>
+            <a href="alunos.html">Voltar</a>
         </form>
     </div>
 </body>
