@@ -24,20 +24,23 @@
 
     <div class="content">
         <h1>Nova Turma</h1>
-        <form>
-            <label for="curso">Curso:</label>
-            <select id="curso" name="curso">
-                <option value="Windows">Windows</option>
-                <option value="Excel">Excel</option>
-                <option value="Power BI">Power BI</option>
-            </select><br>
-
-            <label for="data_inicio">Data de Início:</label>
-            <input type="date" id="data_inicio" name="data_inicio" required><br>
-
-            <label for="data_termino">Data de Término:</label>
-            <input type="date" id="data_termino" name="data_termino" required><br>
-
+        <form action="" method="get">
+            <div class="mb-3">
+                <label for="curso" class="form-label">Curso:</label>
+                <select id="curso" name="curso" class="form-select">
+                    <option value="Windows">Windows</option>
+                    <option value="Excel">Excel</option>
+                    <option value="Power BI">Power BI</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="data_inicio" class="form-label">Data de Início:</label>
+                <input type="date" id="data_inicio" name="data_inicio" class="form-control">
+            </div>
+            <div class="mb-3">    
+                <label for="data_termino" class="form-label">Data de Término:</label>
+                <input type="date" id="data_termino" name="data_termino" class="form-control">
+            </div>    
             <button type="submit">Ok</button>
             <button type="reset">Limpar</button>
             <a href="turmas.html">Voltar</a>

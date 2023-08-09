@@ -22,13 +22,15 @@
 
     <div class="content">
         <h1>Novo Professor</h1>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br>
-
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required><br>
-
+        <form action="" method="get">
+            <div class="mb-3">
+               <label for="nome" class="form-label">Nome:</label>
+               <input type="text" id="nome" name="nome" class="form-control">
+            </div>
+            <div class="mb-3">    
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" class="form-control">
+            </div>
             <button type="submit">Ok</button>
             <button type="reset">Limpar</button>
             <a href="professores.html">Voltar</a>
